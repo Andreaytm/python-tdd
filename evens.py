@@ -1,8 +1,5 @@
 def even_number_of_evens(numbers):
-    if numbers == []:
-        return False
-    else:
-        evens = 0
+    evens = 0
         
     for n in numbers: 
         if n % 2 == 0:
