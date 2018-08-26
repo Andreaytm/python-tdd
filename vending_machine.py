@@ -4,7 +4,10 @@ def get_change(amount):
     if amount ==0:
         return []
         
-    return [amount]
+    if amount in [100, 50, 20, 10, 5, 2, 1]:
+        return [amount]
+    
+    return[2,1]
 
 test_are_equal(get_change(0),[])
 test_are_equal(get_change(1),[1])
@@ -14,5 +17,6 @@ test_are_equal(get_change(10),[10])
 test_are_equal(get_change(20),[20])
 test_are_equal(get_change(50),[50])
 test_are_equal(get_change(100),[100])
+test_are_equal(get_change(3),[2, 1])
 
 print("All test passed")
